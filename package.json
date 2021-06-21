@@ -1,0 +1,22 @@
+{
+  "name": "downloader",
+  "version": "0.12.42",
+  "description": "no",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "twbuild": "npx tailwind build -i ./files/static/tw.css -o ./files/static/tw.min.css"
+  },
+  "author": "Kant",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^4.8.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.2"
+  }
+}

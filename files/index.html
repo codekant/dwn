@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloader</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/icon.png" type="image/png">
+    <link rel="stylesheet" href="/static/tw.min.css">
+    <link rel="stylesheet" href="/static/static.css">
+    <link rel="stylesheet" href="/static/fontawesome/css/all.min.css">
+</head>
+<body>
+    <div id="app" class="hidden m-8 md:m-20">
+        <p class="text-5xl">Dwn</p>
+        <span class="block mb-3"></span>
+        <p id="status" class="text-sm rounded hidden"><i class="fas fa-heart"></i> Thanks for using DWN</p>
+        A free-to-use online YouTube video & audio downloader.  
+        <span class="block mb-4"></span> 
+        <div class="mt-8 space-y-6 max-w-4xl">
+                <input type="hidden" name="remember" value="true">
+                <div>
+                  <div>
+                    <label for="url" class="sr-only">Video URL</label>
+                    <input id="url" name="url" type="url" autocomplete="url" required class="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Video URL">
+                  </div>
+                </div>      
+                <div>
+                  <button id="videobtn" class="group relative justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-400 hover:bg-indigo-500 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white inline">
+                    Video
+                  </button>
+                  <button id="audiobtn" class="group relative justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-400 hover:bg-indigo-500 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white inline">
+                    Audio
+                  </button>
+                </div>
+        </div>
+        <span class="block mb-5"></span>
+        <div class="hidden max-w-3xl bg-white text-indigo-400 rounded" id="videoinfo">
+          <div class="p-4">
+            <p class="text-xl">YouTube Preview</p>
+            <span class="block mb-2"></span>
+            <iframe id="data_iframe" title="Dwn YouTube Preview" frameborder="0" class="rounded h-auto sm:h-2/5 w-full sm:w-4/5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <span class="block mb-2"></span> 
+          <p id="data_title" class="text-base max-w-md">No video info</p>
+          <p id="data_channel" class="text-xs px-2 py-1 bg-indigo-400 text-white w-auto rounded inline-flex">Unknown</p>
+          </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/static/client.js"></script>
+</html>
