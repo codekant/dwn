@@ -40,9 +40,6 @@ app.get('/audio', (req, res) => {
             .on("error", () => {
                 console.log("Error downloading audio - " + info.videoDetails.videoId);
             })
-            .on("end", () => {
-                console.log(`Downloaded Audio - ${info.videoDetails.videoId}`);
-            })
             .pipe(res, { end: true });
         })
     }).catch(e => {

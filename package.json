@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "fluent-ffmpeg": "^2.1.2",
-    "ytdl-core": "^4.8.2"
+    "ytdl-core": "^4.8.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
